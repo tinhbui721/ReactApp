@@ -4,6 +4,7 @@ import StackNavi from './Navigation/StackNavi'
 import BottomTab from './Navigation/BottomTab' 
 import DrawerNavi from './Navigation/DrawerNavi' 
 import MaterialTopNavi from './Navigation/MaterialTopNavi';
+import ConnectAPI from './ConnectAPI/ConnectAPI' 
 
 export default function App() {
   return (
@@ -11,11 +12,15 @@ export default function App() {
 
       <StackNavi/>
 
-      {/* <BottomTab/> */}
-
       {/* <MaterialTopNavi/> */}
 
       {/* <DrawerNavi/> */}
+
+      {/* <BottomTab/> */}
+
+
+
+      {/* <ConnectAPI/> */}
 
     </NavigationContainer>
   );

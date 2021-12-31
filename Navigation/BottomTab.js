@@ -13,13 +13,14 @@ const HomeScreen = () => {
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Text style={styles.text}>HomeScreen</Text>
     </View>
+    // <DrawerNavi/>
   );
 }
 
 const ProfileScreen = () => {
   const [people, setPeople] = useState([
     { name: 'Bùi Văn Tình', key: '19522354' },
-    { name: 'Nguyen Van Hiếu', key: '19521509' },
+    { name: 'Nguyễn Văn Hiếu', key: '19521509' },
     { name: 'Phạm Phúc Hậu', key: '19521485' },
   ]);
   return (
@@ -50,15 +51,12 @@ export default function BottomTab() {
       tabBarLabelStyle: { fontSize: 20, color: 'black', margin: 10 },
       tabBarStyle: { height: 80, justifyContent: 'center' },
       headerTitleAlign: 'center',
-      //  headerShown: false,
+      // headerShown: false,
 
     }}
 
     >
-      <Tab.Screen name='Home' component={HomeScreen}
-        options={{
-          tabBarLabel: 'Home!!!'
-        }}></Tab.Screen>
+      <Tab.Screen name='Home' component={HomeScreen}></Tab.Screen>
       <Tab.Screen name='Profile' component={ProfileScreen}></Tab.Screen>
       <Tab.Screen name='Calculator' component={CalculatorScreen}></Tab.Screen>
     </Tab.Navigator>

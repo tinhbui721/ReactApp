@@ -8,7 +8,6 @@ import {
     Platform
 
 } from 'react-native';
-import { inOut } from 'react-native/Libraries/Animated/Easing';
 import KeyNumber from './KeyNumber'
 
 const button = [

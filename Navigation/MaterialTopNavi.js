@@ -12,7 +12,7 @@ const HomeScreen = () => {
       </View>
     );
   }
-  
+
 
 const ProfileScreen = () => {
   return (
@@ -32,11 +32,15 @@ const Setting = () => {
 
 export default function MaterialTopNavi() {
   return (
-    // <NavigationContainer> 
+    // <NavigationContainer>
         <Tab.Navigator screenOptions={{
           tabBarStyle:{marginTop:20}
         }}>
-          <Tab.Screen name="Home" component={HomeScreen} />
+          <Tab.Screen name="Home" component={HomeScreen}
+            options={{
+              tabBarLabel: 'Home!!!'
+            }}
+          />
           <Tab.Screen name="Profile" component={ProfileScreen} />
           <Tab.Screen name="Setting" component={Setting} />
         </Tab.Navigator>
